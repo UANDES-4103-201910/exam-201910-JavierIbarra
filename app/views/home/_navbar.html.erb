@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="navbar-header">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> 
+          <%= link_to "Product" , products_path ,:class => 'nav-link'%>
+        </li> 
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-righ">
+         <li class="nav-item"> 
+          <%= link_to "Shopping cart" , shopping_carts_path ,:class => 'nav-link'%>
+        </li> 
+      </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg  ">
+  <ul class="navbar-nav">
+    <li class="nav-link"> 
+      <%= link_to "Prepay" , products_path ,:class => 'navbar-link'%>
+    </li>
+    <li class="nav-link"> 
+      <%= link_to "Subscription" , products_path ,:class => 'navbar-link'%>
+    </li>  
+  </ul>
+</nav>
